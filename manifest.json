@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "DBLP Search",
+    "version": "1.0",
+    "description": "TODO",
+    "homepage_url": "https://github.com",
+    "icons": {
+        "48": "icons/logo-48.png"
+    },
+    "permissions": [
+        "activeTab",
+        "contextMenus"
+    ],
+    "browser_action": {
+        "default_icon": "icons/logo-32.png",
+        "default_title": "TODO",
+        "default_popup": "popup/popup.html"
+    },
+    "commands": {
+        "toggle-popup": {
+            "suggested_key": {
+                "default": "Ctrl+Alt+D"
+            },
+            "description": "Search the current selection or open the popup"
+        }
+    },
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
